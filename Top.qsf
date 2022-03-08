@@ -1,0 +1,150 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+# Date created = 14:11:47  October 30, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY Top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:11:47  OCTOBER 30, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_ALU_top -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_bus -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_bus
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_bus -section_id tb_bus
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_fifo -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_fifo
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_fifo -section_id tb_fifo
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_DMAC -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_DMAC
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_DMAC -section_id tb_DMAC
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ALU_alu -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ALU_alu
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ALU_alu -section_id tb_ALU_alu
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ALU_registerfile -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ALU_registerfile
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ALU_registerfile -section_id tb_ALU_registerfile
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ALU_top -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ALU_top
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ALU_top -section_id tb_ALU_top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_Top -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_Top
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_Top -section_id tb_Top
+set_global_assignment -name VERILOG_FILE tb_ram.v
+set_global_assignment -name VERILOG_FILE ROR128.v
+set_global_assignment -name VERILOG_FILE m_to_y.v
+set_global_assignment -name VERILOG_FILE multiplier.v
+set_global_assignment -name VERILOG_FILE multiplicand_to_y.v
+set_global_assignment -name VERILOG_FILE fa_v2.v
+set_global_assignment -name VERILOG_FILE clb4.v
+set_global_assignment -name VERILOG_FILE cla8.v
+set_global_assignment -name VERILOG_FILE cla64.v
+set_global_assignment -name VERILOG_FILE cla4.v
+set_global_assignment -name VERILOG_FILE cla32.v
+set_global_assignment -name VERILOG_FILE cla128.v
+set_global_assignment -name VERILOG_FILE ASR128.v
+set_global_assignment -name VERILOG_FILE _dff_r_en.v
+set_global_assignment -name VERILOG_FILE _8_to_1_MUX.v
+set_global_assignment -name VERILOG_FILE _3_to_8_decoder.v
+set_global_assignment -name VERILOG_FILE write_operatinon.v
+set_global_assignment -name VERILOG_FILE tb_fifo.v
+set_global_assignment -name VERILOG_FILE Register_file.v
+set_global_assignment -name VERILOG_FILE register8_r_en.v
+set_global_assignment -name VERILOG_FILE register32_r_en.v
+set_global_assignment -name VERILOG_FILE register32_8.v
+set_global_assignment -name VERILOG_FILE read_operation.v
+set_global_assignment -name VERILOG_FILE mx2.v
+set_global_assignment -name VERILOG_FILE gates.v
+set_global_assignment -name VERILOG_FILE fifo_out.v
+set_global_assignment -name VERILOG_FILE fifo_ns.v
+set_global_assignment -name VERILOG_FILE fifo_cal_addr.v
+set_global_assignment -name VERILOG_FILE fifo.v
+set_global_assignment -name VERILOG_FILE Top.v
+set_global_assignment -name VERILOG_FILE ALU_Top.v
+set_global_assignment -name VERILOG_FILE DMAC_Top.v
+set_global_assignment -name VERILOG_FILE ram.v
+set_global_assignment -name VERILOG_FILE bus.v
+set_global_assignment -name VERILOG_FILE testbench.v
+set_global_assignment -name VERILOG_FILE bus_arbiter.v
+set_global_assignment -name VERILOG_FILE bus_addressdecoder.v
+set_global_assignment -name VERILOG_FILE bus_seltosel.v
+set_global_assignment -name VERILOG_FILE mux.v
+set_global_assignment -name VERILOG_FILE dff.v
+set_global_assignment -name VERILOG_FILE tb_bus.v
+set_global_assignment -name VERILOG_FILE DMAC_slave.v
+set_global_assignment -name VERILOG_FILE DMAC_fifo.v
+set_global_assignment -name VERILOG_FILE DMAC_master.v
+set_global_assignment -name VERILOG_FILE tb_DMAC.v
+set_global_assignment -name VERILOG_FILE ALU_slave.v
+set_global_assignment -name VERILOG_FILE ALU_alu.v
+set_global_assignment -name VERILOG_FILE ALU_operation.v
+set_global_assignment -name VERILOG_FILE tb_ALU_alu.v
+set_global_assignment -name VERILOG_FILE ALU_alu_top.v
+set_global_assignment -name VERILOG_FILE ALU_registerfile.v
+set_global_assignment -name VERILOG_FILE fifo_16.v
+set_global_assignment -name VERILOG_FILE fifo_ns_16.v
+set_global_assignment -name VERILOG_FILE fifo_cal_addr_16.v
+set_global_assignment -name VERILOG_FILE fifo_out_16.v
+set_global_assignment -name VERILOG_FILE tb_ALU_registerfile.v
+set_global_assignment -name VERILOG_FILE ALU_registerfile_2.v
+set_global_assignment -name VERILOG_FILE tb_ALU_top.v
+set_global_assignment -name VERILOG_FILE tb_Top.v
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ram -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ram
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ram -section_id tb_ram
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_bus.v -section_id tb_bus
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_fifo.v -section_id tb_fifo
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_DMAC.v -section_id tb_DMAC
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_ALU_alu.v -section_id tb_ALU_alu
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_ALU_registerfile.v -section_id tb_ALU_registerfile
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_ALU_top.v -section_id tb_ALU_top
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_Top.v -section_id tb_Top
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_ram.v -section_id tb_ram
